@@ -1,0 +1,179 @@
+
+
+
+CSR1#term length 0
+CSR1#show run
+Building configuration...
+
+Current configuration : 1857 bytes
+!
+! Last configuration change at 13:18:33 UTC Sun Feb 28 2021 by admin
+!
+version 16.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console serial
+!
+hostname CSR1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+ip domain name test.lab
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+! 
+! 
+! 
+! 
+!
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid CSR1000V sn 9L21YWPB8ER
+no license smart enable
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+!
+!
+netconf-yang
+username admin privilege 15 secret 5 $1$7O2U$rUEsNEDAIFvGAI5FTwjyY1
+username admin1 privilege 15
+username admin2 privilege 15
+username admin3 privilege 15
+username admin5 privilege 15
+!
+redundancy
+!
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+! 
+!
+!
+interface GigabitEthernet1
+ description test
+ ip address 192.168.0.50 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet2
+ ip address 2.2.2.2 255.255.255.0
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet3
+ no ip address
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+interface GigabitEthernet4
+ no ip address
+ shutdown
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+ip forward-protocol nd
+ip http server
+ip http authentication local
+ip http secure-server
+ip http client source-interface GigabitEthernet1
+ip tftp source-interface GigabitEthernet1
+ip route 0.0.0.0 0.0.0.0 192.168.0.1
+ip route 1.1.1.0 255.255.255.0 2.2.2.2
+ip route 1.1.2.0 255.255.255.0 2.2.2.2
+!
+ip ssh pubkey-chain
+  username admin1
+   key-hash ssh-rsa EFBD0076FD34EC2684DDB0259FBAB685 evolve@UbuntuOS
+   key-hash ssh-rsa 4E2F5696315C5DA03D8B0A3B61DDB16F evolve@UbuntuOS
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+line con 0
+ stopbits 1
+line vty 0 4
+ login local
+ transport input all
+!
+wsma agent exec
+!
+wsma agent config
+!
+wsma agent filesys
+!
+wsma agent notify
+!
+!
+end
+
+CSR1#
