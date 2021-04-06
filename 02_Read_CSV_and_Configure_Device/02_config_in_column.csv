@@ -1,0 +1,12 @@
+192.168.0.50,192.168.0.51,192.168.0.53,,csr1.test.lab
+terminal len 0,terminal len 0,terminal len 0,terminal len 0,terminal len 0
+config t,config t,config t,config t,config t
+int gi1,int lo0,int gi3,int lo0,int gi2
+no shut,ip add 10.0.0.1 255.255.255.0,no shut,ip add 1.1.1.1 255.255.255.0,no shut
+exit,,,,ip address 2.2.2.2 255.255.255.0
+exit,,,,exit
+show ip int brie,int lo1,,,exit
+show run int gi1,ip add 11.0.0.1 255.255.255.0,,,show ip int brie
+,,,,show run int gi2
+,do show run int loopback0,,,
+,do show run int loopback1,,,
