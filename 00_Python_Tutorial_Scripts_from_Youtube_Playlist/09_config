@@ -1,0 +1,8 @@
+config t
+interface lo 100
+ip add 100.1.1.1 255.255.255.0
+exit
+interface lo 101
+ip add 101.1.1.1 255.255.255.0
+exit
+do sh ip int brie
