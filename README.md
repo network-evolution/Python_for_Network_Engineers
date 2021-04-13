@@ -1,7 +1,7 @@
 ﻿# Python for Network Engineers
 This repo contains Scripts which are explained in the YouTube Channel [NetworkEvolution](https://www.youtube.com/c/NetworkEvolution?sub_confirmation=1)
 
-## 00_Python_Scripts_from_Youtube_Playlist
+## Directory : 00_Python_Scripts_from_Youtube_Playlist
 This directory contains all the Scripts explained in the below YouTube playlist which has more than 70 Videos.
 
 
@@ -11,16 +11,24 @@ To Intermediate level of Using NETCONF/YANG, RESTCONF etc
 
 [Complete Video Playlist:Python Learning for Network Engineers](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 
-###Video List
-- [Part 01 | Introduction | Python for Network Automation](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
+
+
 ```
-[Part 01 | Introduction | Python for Network Automation](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
+For the Complete Scripts and Video maps please access the folder
 ```
 
-These Python scripts leverages Netmiko to:
-  - Create Loopback 103
-  - Retrieve details about Loopback 103
-  - Delete Loopback 103
+These Python scripts Contains Tutorials on:
+  - Paramiko
+  - Netmiko
+  - Nornir
+  - NAPALM
+  - Ansible
+  - NETCONF/YANG
+  - RESTCONF
+  - Regex For Parsing
+  - CSV for Bulk Configuration
+  - How to use text file for Configuration
+ 
 
 This script targets the [IOS XE DevNet Always On Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/27d9747a-db48-4565-8d44-df318fce37ad?diagramType=Topology) that leverages a CSR1000v as a target.  
 
