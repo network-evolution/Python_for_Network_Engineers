@@ -2,7 +2,7 @@
 This repo contains Scripts which are explained in the YouTube Channel [NetworkEvolution](https://www.youtube.com/c/NetworkEvolution?sub_confirmation=1)
 
 ## List of Directories in this Repository:
-- **00_Python_Scripts_from_Youtube_Playlist** 
+- [**00_Python_Scripts_from_Youtube_Playlist** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
 - 
 # Summary of each Directory
 ## Directory : 00_Python_Scripts_from_Youtube_Playlist
