@@ -1,6 +1,10 @@
 ﻿# Python for Network Engineers
 This repo contains Scripts which are explained in the YouTube Channel [NetworkEvolution](https://www.youtube.com/c/NetworkEvolution?sub_confirmation=1)
 
+## List of Directories in this Repository:
+- 00_Python_Scripts_from_Youtube_Playlist 
+- 
+# Summary of each Directory
 ## Directory : 00_Python_Scripts_from_Youtube_Playlist
 This directory contains all the Scripts explained in the below YouTube playlist which has more than 70 Videos.
 
