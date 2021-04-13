@@ -14,7 +14,7 @@ To Intermediate level of Using NETCONF/YANG, RESTCONF etc
 
 
 ```
-For the Complete Scripts and Video maps please access the folder
+For the Complete Scripts and Video maps please access the folder "`00_Python_Scripts_from_Youtube_Playlist`" in this Repository
 ```
 
 These Python scripts Contains Tutorials on:
