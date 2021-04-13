@@ -11,6 +11,8 @@ To Intermediate level of Using NETCONF/YANG, RESTCONF etc
 
 [Complete Video Playlist:Python Learning for Network Engineers](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 
+###Video List
+- [Part 01 | Introduction | Python for Network Automation](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 ```
 [Part 01 | Introduction | Python for Network Automation](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 ```
