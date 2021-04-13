@@ -9,7 +9,7 @@ Training starts from a very beginner level like:
 How to initiate SSH Connection to the Device using Paramiko
 To Intermediate level of Using NETCONF/YANG, RESTCONF etc
 
-[Complete Video Playlist:Python Learning for Network Engineers](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
+[Click here for Complete Videos Playlist In YouTube :Python Learning for Network Engineers](https://www.youtube.com/watch?v=sG_RiytUA38&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N)
 
 
 
