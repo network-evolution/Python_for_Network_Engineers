@@ -3,7 +3,8 @@ This repo contains Scripts which are explained in the YouTube Channel [NetworkEv
 
 ## List of Directories in this Repository:
 - [**00_Python_Scripts_from_Youtube_Playlist** ](https://github.com/network-evolution/Python_for_Network_Engineers#directory--00_python_scripts_from_youtube_playlist)
-- 
+
+***
 # Summary of each Directory
 ## Directory : [00_Python_Scripts_from_Youtube_Playlist](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
 This directory contains all the Scripts explained in the below YouTube playlist which has more than 70 Videos.
@@ -45,3 +46,4 @@ To execute this script against a different device, create a new device dictionar
     cd python_code_samples_network
     cd netmiko-interface-example
     ```
+ ***
