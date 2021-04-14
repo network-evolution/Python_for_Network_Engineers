@@ -25,8 +25,15 @@ These Python scripts Contains Tutorials on:
 ***
 
 ### List of Scripts in the Directory
-- **01_config_in_row.csv** : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- **01_csv_reader_row.py** : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- **02_config_in_column.csv** : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- **02_csv_reader_column.py** : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- **03_csv_DictReader_column.py** : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **01_2.7_telnetlib.py** : Basics on Telnet Library : [Script Demonstration Videos](https://www.youtube.com/watch?v=Ofnb8emEgiM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=6)
+- **01_2.7_telnetlib_cp.py** : Basics on Telnet Library : [Script Demonstration Videos](https://www.youtube.com/watch?v=Ofnb8emEgiM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=6)
+- **02_3.6_telnetlib.py** : Initiate Telnet Using Python 3 :[Script Demonstration Videos](https://www.youtube.com/watch?v=IcFn04M9dPA&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=7)
+- **02_3.6_telnetlib_cp.py** : Python 3 Telnet Tutorial : [Script Demonstration Videos](https://www.youtube.com/watch?v=IcFn04M9dPA&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=7)
+- **03_2.7_telnetlib.py** : Getpass Module Example for Telnet Connection :[Script Demonstration Videos](https://www.youtube.com/watch?v=IcFn04M9dPA&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=7)
+- **04_3.6_telnetlib.py** : Getpass Module Example for Telnet Connection :[Script Demonstration Videos](https://www.youtube.com/watch?v=IcFn04M9dPA&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=7)
+- **05_3.6_paramiko_ssh.py** : Paramiko Intro for Network Automation :[Script Demonstration Videos](https://www.youtube.com/watch?v=ddbHjprpvsM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=8)
+- **06_for_loop.py** : For loop Examples in Python for Network  :[Script Demonstration Videos](https://www.youtube.com/watch?v=7PX0CGeKCZs&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=9)
+- **07_for_loop_devices.py** : For loop for Iterating multiple devices :[Script Demonstration Videos](https://www.youtube.com/watch?v=K1Z6RYesSlI&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=10)
+- **08_list_devices.py** : SSH to list of Devices :[Script Demonstration Videos](https://www.youtube.com/watch?v=B2QUjsa2Ukg&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=11)
+- **09_list_from_file.py** : Read Devices list from Text File  :[Script Demonstration Videos](https://www.youtube.com/watch?v=2bCQwg7qSQM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=12)
+
