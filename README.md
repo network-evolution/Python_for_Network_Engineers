@@ -69,6 +69,7 @@ For the Complete Scripts and Video maps please access the folder "`01_Paramiko_S
 This directory contains Scripts which explains how to read Device IP Address and configuration lines from CSV file and configure respective device.
 
 * Sample CSV FIle Used for Configuring the Device :
+
 ![CSV1](https://user-images.githubusercontent.com/70020386/114660759-7d79b600-9d13-11eb-8e53-6cd2807341c8.png)
 ```
 session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
