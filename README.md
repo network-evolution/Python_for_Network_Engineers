@@ -5,6 +5,7 @@ This repo contains Scripts which are explained in the YouTube Channel [NetworkEv
 - [**00_Python_Scripts_from_Youtube_Playlist** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
 - [**01_Paramiko_Sample_Scripts** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/01_Paramiko_Sample_Scripts)
 - [**02_Configure_Device_Using_CSV** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/02_Configure_Device_Using_CSV)
+- [**03_Cisco_Config_Parser_Regex** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/03_Cisco_Config_Parser_Regex)
 
 # Summary of each Directory
 ***
@@ -117,4 +118,60 @@ conf_dict={'192.168.0.50': ['terminal len 0',
 ```
 For the Complete Scripts and Video maps please access the folder "`02_Configure_Device_Using_CSV`" in this Repository
 ```
+
+***
+## Directory : [03_Cisco_Config_Parser_Regex](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/03_Cisco_Config_Parser_Regex)
+This directory contains Scripts which explains how to parse configuration lines from Cisco Devices Using Regex in Python
+
+* Sample Parsed Output :
+** Show Version Parser 
+
+![Show_Version](https://user-images.githubusercontent.com/70020386/114664645-9dac7380-9d19-11eb-9e8f-864eae0bc6b0.png)
+
+
+* The above CSV file will create a Dictionary in below format 
+```
+conf_dict={'192.168.0.50': ['terminal len 0',
+                  'config t',
+                  'int gi1',
+                  'no shut',
+                  'exit',
+                  'exit',
+                  'show ip int brie',
+                  'show run int gi1'],
+ '192.168.0.51': ['terminal len 0',
+                  'config t',
+                  'int lo0',
+                  'ip add 10.0.0.1 255.255.255.0',
+                  'int lo1',
+                  'ip add 11.0.0.1 255.255.255.0',
+                  'do show run int loopback0',
+                  'do show run int loopback1'],
+ '192.168.0.53': ['terminal len 0', 'config t', 'int gi3', 'no shut'],
+ 'csr1.test.lab': ['terminal len 0',
+                   'config t',
+                   'int gi2',
+                   'no shut',
+                   'ip address 2.2.2.2 255.255.255.0',
+                   'exit',
+                   'exit',
+                   'show ip int brie',
+                   'show run int gi2']}
+```
+
+* 
+
+### List of Scripts in the Directory
+- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+
+[Click here for Complete CSV Videos Playlist In YouTube :02_Configure_Device_Using_CSV](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+
+```
+For the Complete Scripts and Video maps please access the folder "`02_Configure_Device_Using_CSV`" in this Repository
+```
+
 
