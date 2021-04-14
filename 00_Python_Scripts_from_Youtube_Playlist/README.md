@@ -38,5 +38,5 @@ These Python scripts Contains Tutorials on:
 - **09_list_from_file.py** : Read Devices list from Text File  :[Script Demonstration Videos](https://www.youtube.com/watch?v=2bCQwg7qSQM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=12)
 
 
-> **Will be uploading the completel playlist's (Python Learning for Network Engineers: More than 70 Videos) relevant Scripts in this Directory **
+> **Will be uploading the completel playlist's (Python Learning for Network Engineers: More than 70 Videos) relevant Scripts in this Directory**
 
