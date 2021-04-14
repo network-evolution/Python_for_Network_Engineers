@@ -35,19 +35,20 @@ These Python scripts Contains Tutorials on:
   - How to use text file for Configuration
 
 ***
-## Directory : [00_Python_Scripts_from_Youtube_Playlist](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
+## Directory : [01_Paramiko_Sample_Scripts](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/01_Paramiko_Sample_Scripts)
 This directory contains Scripts which explains how to use Paramiko Library for communicating with Cisco Devices.
 
-Demonstrates the use of SSH Hostkey policy. Different ways to use hostkey policies :
+* Demonstrates the use of SSH Hostkey policy. Different ways to use hostkey policies :
 ```
 session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 session.load_host_keys('/home/evolve/.ssh/known_hosts')
 session.set_missing_host_key_policy(paramiko.WarningPolicy())
 ```
 
-SSH Keybased Authentication Using Paramiko:
-
-SSH Password Based AUthentication
+* SSH Keybased Authentication Using Paramiko:
+* Paramiko SSH exec_command Example
+* Paramiko invoke_shell example
+* SSH Password Based Authentication
 
 ### List of Scripts
 ```
