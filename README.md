@@ -4,6 +4,7 @@ This repo contains Scripts which are explained in the YouTube Channel [NetworkEv
 ## List of Directories in this Repository:
 - [**00_Python_Scripts_from_Youtube_Playlist** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
 - [**01_Paramiko_Sample_Scripts** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/01_Paramiko_Sample_Scripts)
+- [**02_Configure_Device_Using_CSV** ](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/02_Configure_Device_Using_CSV)
 
 # Summary of each Directory
 ***
@@ -50,7 +51,7 @@ session.set_missing_host_key_policy(paramiko.WarningPolicy())
 * Paramiko invoke_shell example
 * SSH Password Based Authentication
 
-### List of Scripts
+### List of Scripts in the Directory
 ```
 01_ssh_host_key_policy.py
 02.1_ssh_key_cisco_exec_command.py
@@ -61,15 +62,36 @@ session.set_missing_host_key_policy(paramiko.WarningPolicy())
 [Click here for Complete Paramiko Scripts Tutorial Playlist In YouTube :01_Paramiko_Sample_Scripts](https://www.youtube.com/watch?v=A075aWJMAeM&list=PLOocymQm7YWYc73phqzbZ1S3ANrVVpUFN)
 
 ```
-For the Complete Scripts and Video maps please access the folder "`00_Python_Scripts_from_Youtube_Playlist`" in this Repository
+For the Complete Scripts and Video maps please access the folder "`01_Paramiko_Sample_Scripts`" in this Repository
+```
+***
+## Directory : [02_Configure_Device_Using_CSV](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/02_Configure_Device_Using_CSV)
+This directory contains Scripts which explains how to read Device IP Address and configuration lines from CSV file and configure respective device.
+
+* Sample CSV FIle Used for Configuring the Device :
+![CSV1](https://user-images.githubusercontent.com/70020386/114660759-7d79b600-9d13-11eb-8e53-6cd2807341c8.png)
+```
+session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+session.load_host_keys('/home/evolve/.ssh/known_hosts')
+session.set_missing_host_key_policy(paramiko.WarningPolicy())
 ```
 
-These Python scripts Contains Tutorials on:
-  - Paramiko
-  - Netmiko
-  - Nornir
-  - NAPALM
-  - Ansible
-  - NETCONF/YANG
-  - RESTCONF
-  - Regex For Parsing
+* SSH Keybased Authentication Using Paramiko:
+* Paramiko SSH exec_command Example
+* Paramiko invoke_shell example
+* SSH Password Based Authentication
+
+### List of Scripts in the Directory
+```
+01_ssh_host_key_policy.py
+02.1_ssh_key_cisco_exec_command.py
+02.2_ssh_key_cisco_invoke_shell.py
+02.3_ssh_key_cisco_invoke_shell_fn.py
+```
+
+[Click here for Complete Paramiko Scripts Tutorial Playlist In YouTube :01_Paramiko_Sample_Scripts](https://www.youtube.com/watch?v=A075aWJMAeM&list=PLOocymQm7YWYc73phqzbZ1S3ANrVVpUFN)
+
+```
+For the Complete Scripts and Video maps please access the folder "`01_Paramiko_Sample_Scripts`" in this Repository
+```
+
