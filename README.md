@@ -107,11 +107,11 @@ conf_dict={'192.168.0.50': ['terminal len 0',
 * 
 
 ### List of Scripts in the Directory
-- <u>01_config_in_row.csv<u> : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **01_config_in_row.csv** : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **01_csv_reader_row.py** : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **02_config_in_column.csv** : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **02_csv_reader_column.py** : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- **03_csv_DictReader_column.py** : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
 
 [Click here for Complete CSV Videos Playlist In YouTube :02_Configure_Device_Using_CSV](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
 
@@ -158,11 +158,11 @@ static_route_pattern = re.compile(r'ip route (?P<dst_subnet>[^0][\d\.]+) (?P<mas
 * 
 
 ### List of Scripts in the Directory
-- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
-- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
-- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
-- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
-- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- **01_parse_Show_ver_SSH.py** : Parse Show Version Output over SSH : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- **01_parse_show_ver_from_file.py** : Parse Show Version Output from Text file : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- **02_parse_show_run_from_file.py** : Parse Show Run Output from Text file :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- **02_parse_show_run_from_SSH.py** : HParse Show Run Output from SSH : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- **command_output_to_txt.py** : Save Multiple Show Commands to text file :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
 
 [Click here for Complete Cisco Configuration Parsing Videos Playlist In YouTube](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
 
