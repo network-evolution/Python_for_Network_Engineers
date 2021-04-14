@@ -58,7 +58,7 @@ session.set_missing_host_key_policy(paramiko.WarningPolicy())
 02.3_ssh_key_cisco_invoke_shell_fn.py
 ```
 
-[Click here for Complete Videos Playlist In YouTube :Python Learning for Network Engineers](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/01_Paramiko_Sample_Scripts)
+[Click here for Complete Paramiko Scripts Tutorial Playlist In YouTube :01_Paramiko_Sample_Scripts](https://www.youtube.com/watch?v=A075aWJMAeM&list=PLOocymQm7YWYc73phqzbZ1S3ANrVVpUFN)
 
 ```
 For the Complete Scripts and Video maps please access the folder "`00_Python_Scripts_from_Youtube_Playlist`" in this Repository
