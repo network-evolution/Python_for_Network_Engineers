@@ -37,3 +37,6 @@ These Python scripts Contains Tutorials on:
 - **08_list_devices.py** : SSH to list of Devices :[Script Demonstration Videos](https://www.youtube.com/watch?v=B2QUjsa2Ukg&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=11)
 - **09_list_from_file.py** : Read Devices list from Text File  :[Script Demonstration Videos](https://www.youtube.com/watch?v=2bCQwg7qSQM&list=PLOocymQm7YWakdZkBfCRIC06fv7xQE85N&index=12)
 
+```
+Will be uploading the completel playlist's (Python Learning for Network Engineers: More than 70 Videos) relevant Scripts in this Directory 
+```
