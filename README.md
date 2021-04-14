@@ -4,8 +4,9 @@ This repo contains Scripts which are explained in the YouTube Channel [NetworkEv
 ## List of Directories in this Repository:
 - [**00_Python_Scripts_from_Youtube_Playlist** ](https://github.com/network-evolution/Python_for_Network_Engineers#directory--00_python_scripts_from_youtube_playlist)
 
-***
+
 # Summary of each Directory
+***
 ## Directory : [00_Python_Scripts_from_Youtube_Playlist](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/00_Python_Scripts_from_Youtube_Playlist)
 This directory contains all the Scripts explained in the below YouTube playlist which has more than 70 Videos.
 
@@ -33,17 +34,5 @@ These Python scripts Contains Tutorials on:
   - Regex For Parsing
   - CSV for Bulk Configuration
   - How to use text file for Configuration
- 
 
-This script targets the [IOS XE DevNet Always On Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/27d9747a-db48-4565-8d44-df318fce37ad?diagramType=Topology) that leverages a CSR1000v as a target.  
-
-To execute this script against a different device, create a new device dictionary in `device_info.py` for your device.  Then import this new dictionary instead of `ios_xe1` in the scripts.
-
-* Clone the Python Examples and change into the directory.  
-
-    ```bash
-    git clone https://github.com/CiscoDevNet/python_code_samples_network.git
-    cd python_code_samples_network
-    cd netmiko-interface-example
-    ```
  ***
