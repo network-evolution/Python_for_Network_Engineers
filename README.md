@@ -106,11 +106,15 @@ conf_dict={'192.168.0.50': ['terminal len 0',
 * 
 
 ### List of Scripts in the Directory
-- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
 
-[Click here for Complete Paramiko Scripts Tutorial Playlist In YouTube :01_Paramiko_Sample_Scripts](https://www.youtube.com/watch?v=A075aWJMAeM&list=PLOocymQm7YWYc73phqzbZ1S3ANrVVpUFN)
+[Click here for Complete Paramiko Scripts Tutorial Playlist In YouTube :02_Configure_Device_Using_CSV](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
 
 ```
-For the Complete Scripts and Video maps please access the folder "`01_Paramiko_Sample_Scripts`" in this Repository
+For the Complete Scripts and Video maps please access the folder "`02_Configure_Device_Using_CSV`" in this Repository
 ```
 
