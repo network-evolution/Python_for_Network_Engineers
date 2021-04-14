@@ -123,55 +123,51 @@ For the Complete Scripts and Video maps please access the folder "`02_Configure_
 ## Directory : [03_Cisco_Config_Parser_Regex](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/03_Cisco_Config_Parser_Regex)
 This directory contains Scripts which explains how to parse configuration lines from Cisco Devices Using Regex in Python
 
-* Sample Parsed Output :
-** Show Version Parser 
+### Sample Parsed Output :
+
+*Show Version Parser 
 
 ![Show_Version](https://user-images.githubusercontent.com/70020386/114664645-9dac7380-9d19-11eb-9e8f-864eae0bc6b0.png)
 
+*Show Running Config Parser Output:
 
-* The above CSV file will create a Dictionary in below format 
+![Show_run_parsing](https://user-images.githubusercontent.com/70020386/114667044-9f2b6b00-9d1c-11eb-8fe4-9f2d38bf8b2d.png)
+
+* Regex Patterns Used for Show Version Parser:
 ```
-conf_dict={'192.168.0.50': ['terminal len 0',
-                  'config t',
-                  'int gi1',
-                  'no shut',
-                  'exit',
-                  'exit',
-                  'show ip int brie',
-                  'show run int gi1'],
- '192.168.0.51': ['terminal len 0',
-                  'config t',
-                  'int lo0',
-                  'ip add 10.0.0.1 255.255.255.0',
-                  'int lo1',
-                  'ip add 11.0.0.1 255.255.255.0',
-                  'do show run int loopback0',
-                  'do show run int loopback1'],
- '192.168.0.53': ['terminal len 0', 'config t', 'int gi3', 'no shut'],
- 'csr1.test.lab': ['terminal len 0',
-                   'config t',
-                   'int gi2',
-                   'no shut',
-                   'ip address 2.2.2.2 255.255.255.0',
-                   'exit',
-                   'exit',
-                   'show ip int brie',
-                   'show run int gi2']}
+version_pattern = re.compile(r'Cisco .+ Software, Version (\S+)')
+model_pattern = re.compile(r'cisco (\S+).+bytes of memory\.')
+serial_no_pattern = re.compile(r'Processor board ID (\S+)')
+uptime_pattern = re.compile(r'(.+) uptime is (.*)')
+
+```
+* Regex Patterns Used for Show running Parser:
+```
+hostname_pattern = re.compile(r'hostname (\S+)')
+domainname_pattern = re.compile(r'ip domain name (.+)')
+pid_pattern = re.compile(r'license udi pid (\w+) sn (\S+)')
+netconf_pattern = re.compile(r"netconf-yang\r\n")
+username_pattern = re.compile(r'username (\S+) privilege (\d{2})')
+interface_pattern = re.compile(r'interface (\S+[.]?\d*)\r\n.+?\r?\n?\s?ip address ([\d\.]+) ([\d\.]+)')
+interface_prop_pattern = re.compile(r'interface (?P<name>\S+[.]?\d*)\r\n\s?.+?\r?\n?\s?ip address (?P<ip_aadress>[\d\.]+) (?P<mask>[\d\.]+)')
+default_route_pattern = re.compile(r'ip route 0.0.0.0 0.0.0.0.+?([\d.]+)\r\n')
+static_route_pattern = re.compile(r'ip route (?P<dst_subnet>[^0][\d\.]+) (?P<mask>[^0][\d\.]+) (?P<next_hop>[\d\.]+)')
+
 ```
 
 * 
 
 ### List of Scripts in the Directory
-- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
-- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+- 01_config_in_row.csv : How to read Content from CSV file in row format : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- 01_csv_reader_row.py : How to read Content from CSV file Using Reader format : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- 02_config_in_column.csv : How to read Content from CSV file in Column format :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- 02_csv_reader_column.py : How to read Content from CSV file in Column format using Reader : [Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
+- 03_csv_DictReader_column.py : How to read Content from CSV file in Column format using DictReader :[Script Demonstration Videos](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
 
-[Click here for Complete CSV Videos Playlist In YouTube :02_Configure_Device_Using_CSV](https://www.youtube.com/watch?v=3XoVPJkHMFU&list=PLOocymQm7YWYpP_Qkju89vN8BykhvWO5U)
+[Click here for Complete Cisco Configuration Parsing Videos Playlist In YouTube](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93)
 
 ```
-For the Complete Scripts and Video maps please access the folder "`02_Configure_Device_Using_CSV`" in this Repository
+For the Complete Scripts and Video maps please access the folder "03_Cisco_Config_Parser_Regex" in this Repository
 ```
 
 
