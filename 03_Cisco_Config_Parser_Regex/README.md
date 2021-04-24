@@ -1,6 +1,6 @@
 # Directory : [03_Cisco_Config_Parser_Regex](https://github.com/network-evolution/Python_for_Network_Engineers/tree/main/03_Cisco_Config_Parser_Regex)
 This directory contains Scripts which explains how to parse configuration lines from Cisco Devices Using Regex in Python
-### Click [here](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93) for the YouTube Video Playlist Which explains the Parser Scripts
+### Watch [Video](https://www.youtube.com/watch?v=PbP9tyV0Zao&list=PLOocymQm7YWY8Eksax8mjRSWbUijb7W93) Which explains the Parser Scripts in detail
 ### Sample Parsed Output :
 
 *Show Version Parser 
