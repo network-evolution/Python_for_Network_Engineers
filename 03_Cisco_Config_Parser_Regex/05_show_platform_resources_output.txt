@@ -1,0 +1,18 @@
+
+
+
+CSR1#term length 0
+CSR1#show platform resources
+**State Acronym: H - Healthy, W - Warning, C - Critical                                             
+Resource                 Usage                 Max             Warning         Critical        State
+----------------------------------------------------------------------------------------------------
+RP0 (ok, active)                                                                               H    
+ Control Processor       6.41%                 100%            90%             95%             H    
+  DRAM                   2679MB(68%)           3891MB          90%             95%             H    
+ESP0(ok, active)                                                                               H    
+ QFP                                                                                           H    
+  DRAM                   23790KB(9%)           262144KB        80%             90%             H    
+  IRAM                   213KB(10%)            2048KB          80%             90%             H    
+  CPU Utilization        1.00%                 100%            90%             95%             H    
+
+CSR1#
