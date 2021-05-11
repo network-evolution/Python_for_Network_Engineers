@@ -1,0 +1,143 @@
+
+!
+! Last configuration change at 13:07:03 UTC Wed Apr 24 2019 by admin
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no platform punt-keepalive disable-kernel-core
+platform console serial
+!
+hostname RTR_67.47
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+
+
+ip domain name testdomain.com
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+multilink bundle-name authenticated
+!
+!
+license udi pid CSR1000V sn 9XLKVMYUTF3
+file prompt quiet
+!
+username admin privilege 15 secret 5 $1$YKnO$PAp9RMpleyTbAqc1yPfXm1
+username admin1 privilege 15
+!
+redundancy
+ mode none
+!
+!
+!
+ip scp server enable
+!
+!
+!
+!
+interface GigabitEthernet1
+ ip address 192.168.67.47 255.255.255.0
+ negotiation auto
+!
+interface GigabitEthernet2
+ ip address 100.100.100.100 255.255.255.0
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet3
+ no ip address
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet4
+ no ip address
+ shutdown
+ negotiation auto
+
+interface Loopback1
+ ip address 10.10.1.1 255.255.255.0
+interface Loopback2
+ ip address 10.10.2.1 255.255.255.0
+interface Loopback3
+ ip address 10.10.3.1 255.255.255.0
+interface Loopback4
+ ip address 10.10.4.1 255.255.255.0
+interface Loopback5
+ ip address 10.10.5.1 255.255.255.0
+interface Loopback6
+ ip address 10.10.6.1 255.255.255.0
+interface Loopback7
+ ip address 10.10.7.1 255.255.255.0
+interface Loopback8
+ ip address 10.10.8.1 255.255.255.0
+interface Loopback9
+ ip address 10.10.9.1 255.255.255.0
+interface Loopback10
+ ip address 10.10.10.1 255.255.255.0
+interface Loopback11
+ ip address 10.10.11.1 255.255.255.0
+interface Loopback12
+ ip address 10.10.12.1 255.255.255.0
+interface Loopback13
+ ip address 10.10.13.1 255.255.255.0
+interface Loopback14
+ ip address 10.10.14.1 255.255.255.0
+interface Loopback15
+ ip address 10.10.15.1 255.255.255.0
+interface Loopback16
+ ip address 10.10.16.1 255.255.255.0
+interface Loopback17
+ ip address 10.10.17.1 255.255.255.0
+interface Loopback18
+ ip address 10.10.18.1 255.255.255.0
+interface Loopback19
+ ip address 10.10.19.1 255.255.255.0
+interface Loopback20
+ ip address 10.10.20.1 255.255.255.0
+!
+!
+virtual-service csr_mgmt
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+ip route 0.0.0.0 0.0.0.0 192.168.67.254
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ stopbits 1
+line aux 0
+ stopbits 1
+line vty 0 4
+ login local
+ transport input all
+!
+!
+end
