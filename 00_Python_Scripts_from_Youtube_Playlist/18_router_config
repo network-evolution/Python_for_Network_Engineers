@@ -1,0 +1,3 @@
+interface lo0
+ip add 1.1.1.1 255.255.255.252
+no shut
