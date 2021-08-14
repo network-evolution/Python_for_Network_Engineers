@@ -1,0 +1,94 @@
+devnet_csr = {
+	'host': 'ios-xe-mgmt-latest.cisco.com',
+	'username': 'developer',
+	'password': 'C1sco12345'
+}
+
+Response to Hello
+#########################
+<?xml version="1.0" encoding="UTF-8"?>
+<hello
+	xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<capabilities>
+		<capability>urn:ietf:params:netconf:base:1.0</capability>
+	</capabilities></hello>]]>]]>
+
+01 Get Config
+####################
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<get-config>
+<source>
+<running/>
+</source>
+</get-config>
+</rpc>]]>]]>
+
+
+02 Get Specific interface config
+################################
+<?xml version="1.0" encoding="UTF-8"??>
+<nc:rpc message-id="101" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <nc:get>
+        <nc:filter type="subtree">
+            <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+             <interface>
+              <GigabitEthernet>
+               <name>1</name>
+               <description></description>
+                 <ip></ip>
+              </GigabitEthernet>
+             </interface>
+            </native>
+        </nc:filter>
+    </nc:get>
+</nc:rpc>
+]]>]]>
+
+
+03 Assign IP to Gi2
+###########################################
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="102">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native"><interface><GigabitEthernet><name xmlns:nc='urn:ietf:params:xml:ns:netconf:base:1.0'>2</name><ip><address><primary><address>2.2.2.5</address><mask>255.255.255.252</mask></primary></address></ip></GigabitEthernet></interface></native>
+    </config>
+  </edit-config>
+</rpc>
+
+
+04 Save Configuration
+############################
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="103">
+  <cisco-ia:save-config xmlns:cisco-ia="http://cisco.com/yang/cisco-ia"/>
+</rpc>
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="103">
+  <edit-config>
+    <target>
+      <running/>
+    </target>
+    <config>
+      <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <interface>
+          <GigabitEthernet>
+             <name>2</name><ip><address><primary><address>2.2.2.5</address><mask>255.255.255.252</mask></primary></address></ip></GigabitEthernet></interface></native>
+    </config>
+  </edit-config>
+</rpc>
+
+
+
