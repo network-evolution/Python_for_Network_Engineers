@@ -1,4 +1,5 @@
-#! /data/05_Atom_Demo/Atom_P.6/bin/python3.6
+#! /data/Python_envs/Python3/bin/python3
+
 from telnetlib import Telnet
 cmd = input('Enter the Command to execute :')
 tn = Telnet('172.18.1.1')
