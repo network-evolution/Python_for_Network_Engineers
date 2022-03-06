@@ -1,12 +1,11 @@
+#! /usr/local/Python_envs/Python3/bin/python3
 
 import paramiko
 import time
 from getpass import getpass
 
-
-username = 'admin'
-password = 'admin'
-
+username = 'developer'
+password = 'C1sco12345'
 
 DEVICE_LIST = open ('09_devices')
 for RTR in DEVICE_LIST:
