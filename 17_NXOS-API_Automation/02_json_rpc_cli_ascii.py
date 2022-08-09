@@ -5,9 +5,6 @@ from pprint import pprint
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-"""
-Modify these please
-"""
 
 switchuser='admin'
 switchpassword='admin'
