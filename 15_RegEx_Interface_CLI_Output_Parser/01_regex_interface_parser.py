@@ -11,6 +11,7 @@ import threading
 import schedule
 import re
 from tabulate import tabulate
+# RegEx Pattern to parse cisco show ip interface command output
 int_pattern = re.compile(r"(\S+)\s+(([\d\\.]+)|unassigned)\s+\S+\s+\S+\s+(up|administratively down)\s+(\S+)")
 lab_csr = {'host': '192.168.0.63',
 		   'username': 'admin',
@@ -33,6 +34,7 @@ lab_ios2 = {'host': '192.168.0.62',
 		   'device_type': 'cisco_ios'}
 
 device_list = [lab_csr, devnet_csr,lab_ios1,lab_ios2]
+# function to parse cisco configuration
 def cisco_int_parser(device):
 	now = datetime.datetime.now()
 	print(f"Connecting to the device: {device['host']} at {now}")
