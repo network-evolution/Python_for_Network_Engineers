@@ -1,0 +1,9 @@
+---
+netbox_url: https://192.168.0.82
+netbox_token: bb5ae3f2b41ab0cde15d434a6308651629b47cb5
+netbox_state: present
+device: router_61
+device_role: prod_routers
+site: prod_dc011
+status: active
+

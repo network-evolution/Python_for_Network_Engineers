@@ -1,0 +1,103 @@
+stages:
+  - commit_to_tower
+
+###########################################
+####       Staging Pipeline    ############
+###########################################
+
+01_staging_get_facts-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'staging'
+    changes:
+      - 01_cisco_get_facts.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 15
+############################################
+02_staging_snmp_config-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'staging'    
+    changes:
+      - 02_cisco_snmp_config.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 11
+    
+############################################
+03_staging_dns_config-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'staging'
+    changes:
+      - 03_cisco_dns_config.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 16
+
+###########################################
+###     Production Pipeline    ############
+###########################################
+01_production_get_facts-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'production'
+    changes:
+      - 01_cisco_get_facts.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 17
+############################################
+02_production_snmp_config-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'production'    
+    changes:
+      - 02_cisco_snmp_config.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 9
+    
+############################################
+03_production_dns_config-job: 
+  when: on_success
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == 'production'
+    changes:
+      - 03_cisco_dns_config.yml
+  tags:
+    - tower
+  stage: commit_to_tower
+  script:
+    - cd /home/gitlab-runner/scripts
+    - pwd
+    - ./trigger_job.py 18
+
+    

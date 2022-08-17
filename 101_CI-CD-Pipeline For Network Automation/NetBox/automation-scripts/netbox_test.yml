@@ -1,0 +1,16 @@
+- name: NBM
+  connection: local
+  hosts: localhost
+  tasks:
+   - name: t1 create ns
+     netbox.netbox.netbox_device:
+       netbox_url: https://192.168.0.82
+       netbox_token: bb5ae3f2b41ab0cde15d434a6308651629b47cb5
+       data:
+         name: test123
+         device_type: router
+         device_role: edge
+         site: dc1
+         status: staged
+       state: present
+       validate_certs: false

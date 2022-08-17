@@ -1,0 +1,17 @@
+---
+ - name: Cisco script_updated
+   hosts: device_types_iosv
+   connection: network_cli
+   vars:
+     ansible_network_os: ios
+   tasks:
+    - name: facts
+      ios_facts:
+    - debug:
+        var: ansible_facts
+    - name: Get Hostname
+      debug:
+        var: net_hostname
+    - name: Get New
+      debug:
+        var: net_version

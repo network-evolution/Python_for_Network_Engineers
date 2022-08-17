@@ -1,0 +1,26 @@
+---
+ - name: Cisco SNMP Config_updated
+   connection: network_cli 
+   hosts: device_types_iosv
+   vars:
+     ansible_network_os: ios
+   tasks:
+    - name: Removing Existing SNMP Config
+      ios_config:
+        lines:
+         - no snmp-server community SNMP_ORG RO 
+         
+    - name: Adding New SNMP
+      ios_config:
+        lines:
+         - snmp-server community SNMP_ORG1 RO 
+         
+    - name: Check SNMP Config
+      ios_command:
+        commands:
+         - sh run | i snmp-server
+        wait_for: 
+         - result[0] contains "snmp-server community SNMP_ORG1 RO"
+      register: snmp_output
+    - debug:
+        var: snmp_output.stdout_lines

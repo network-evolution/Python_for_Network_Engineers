@@ -1,0 +1,17 @@
+---
+plugin: netbox.netbox.nb_inventory
+api_endpoint: https://192.168.0.82
+token: bb5ae3f2b41ab0cde15d434a6308651629b47cb5
+validate_certs: false
+config_context: false
+ansible_user: admin
+ansible_password: admin
+ansible_connection: network_cli
+group_by:
+ - sites
+ - device_types
+query_filters:
+# - tag: stage
+  - site: nyc_prod
+#  - device_type: "iosv"
+

@@ -1,0 +1,33 @@
+---
+ - name: Cisco Name Servers Configuration_updated
+   connection: network_cli 
+   hosts: device_types_iosv
+   vars:
+     ansible_network_os: ios
+   tasks:
+   
+    - name: Getting Current Name Server Config
+      ios_command:
+        commands:
+         - sh run | i name-server
+         
+      register: dns_output
+    - debug:
+        var: dns_output.stdout_lines
+        
+    - name: Configuring new Name Server
+      ios_system:
+        name_servers:
+         - 8.8.8.1
+         - 8.8.8.2
+
+    - name: Getting New Name Server Config
+      ios_command:
+        commands:
+         - sh run | i name-server
+         
+      register: dns_output
+    - debug:
+        var: dns_output.stdout_lines         
+
+
