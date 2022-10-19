@@ -1,0 +1,30 @@
+
+2022-07-06 14:52:59,184: %UNICON-INFO: +++ nx-osv-1 logfile output_folder/connection_nx-osv-1.txt +++
+
+2022-07-06 14:52:59,184: %UNICON-INFO: +++ Unicon plugin nxos (unicon.plugins.nxos) +++
+Trying mock_device ...
+Connected to mock_device.
+Escape character is '^]'.
+
+
+2022-07-06 14:52:59,936: %UNICON-INFO: +++ connection to spawn: mock_device_cli --os nxos --mock_data_dir mocked_data/nxos --state connect, id: 139693643654784 +++
+
+2022-07-06 14:52:59,937: %UNICON-INFO: connection to nx-osv-1
+
+switch#
+
+2022-07-06 14:53:00,792: %UNICON-WARNING: Invalid hostname detected: found switch, expected nx-osv-1
+
+2022-07-06 14:53:00,792: %UNICON-INFO: +++ initializing handle +++
+
+2022-07-06 14:53:00,857: %UNICON-INFO: +++ nx-osv-1 with via 'ssh': executing command 'term length 0' +++
+term length 0
+switch#
+
+2022-07-06 14:53:00,999: %UNICON-INFO: +++ nx-osv-1 with via 'ssh': executing command 'term width 511' +++
+term width 511
+switch#
+
+2022-07-06 14:53:01,143: %UNICON-INFO: +++ nx-osv-1 with via 'ssh': executing command 'terminal session-timeout 0' +++
+terminal session-timeout 0
+switch#

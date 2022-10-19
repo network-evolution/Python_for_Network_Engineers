@@ -1,0 +1,135 @@
+{
+  "_exclude": [
+    "if_handle",
+    "keepalives",
+    "last_reset",
+    "reset_reason",
+    "foreign_port",
+    "local_port",
+    "msg_rcvd",
+    "msg_sent",
+    "up_down",
+    "bgp_table_version",
+    "routing_table_version",
+    "tbl_ver",
+    "table_version",
+    "memory_usage",
+    "updates",
+    "mss",
+    "total",
+    "total_bytes",
+    "up_time",
+    "bgp_negotiated_keepalive_timers",
+    "hold_time",
+    "keepalive_interval",
+    "sent",
+    "received",
+    "status_codes",
+    "holdtime",
+    "router_id",
+    "connections_dropped",
+    "connections_established",
+    "advertised",
+    "prefixes",
+    "routes",
+    "state_pfxrcd"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "instance": {
+      "default": {
+        "bgp_id": 65000,
+        "protocol_state": "running",
+        "vrf": {
+          "default": {
+            "address_family": {
+              "ipv4 unicast": {
+                "distance_internal_as": 200,
+                "nexthop_trigger_delay_critical": 3000,
+                "nexthop_trigger_delay_non_critical": 10000,
+                "nexthop_trigger_enable": true
+              },
+              "ipv6 unicast": {
+                "nexthop_trigger_delay_critical": 3000,
+                "nexthop_trigger_delay_non_critical": 10000,
+                "nexthop_trigger_enable": true
+              }
+            },
+            "cluster_id": "0.0.0.0",
+            "confederation_identifier": 0,
+            "router_id": "10.2.2.2"
+          }
+        }
+      }
+    }
+  },
+  "raw_data": false,
+  "routes_per_peer": {
+    "instance": {
+      "default": {
+        "vrf": {
+          "default": {
+            "neighbor": {
+              "10.1.1.1": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "input_queue": 0,
+                    "msg_rcvd": 9588,
+                    "msg_sent": 8711,
+                    "output_queue": 0,
+                    "state_pfxrcd": "1",
+                    "tbl_ver": 7,
+                    "up_down": "6d01h"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "table": {
+    "instance": {
+      "default": {
+        "vrf": {
+          "default": {
+            "address_family": {
+              "ipv4 unicast": {
+                "bgp_table_version": 7,
+                "prefixes": {
+                  "10.11.11.11/32": {
+                    "index": {
+                      "1": {
+                        "localpref": 100,
+                        "metric": 0,
+                        "next_hop": "10.1.1.1",
+                        "origin_codes": "i",
+                        "status_codes": "*>",
+                        "weight": 0
+                      }
+                    }
+                  },
+                  "10.22.22.22/32": {
+                    "index": {
+                      "1": {
+                        "localpref": 100,
+                        "next_hop": "0.0.0.0",
+                        "origin_codes": "i",
+                        "status_codes": "*>",
+                        "weight": 32768
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

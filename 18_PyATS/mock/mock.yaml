@@ -1,0 +1,19 @@
+devices:
+    nx-osv-1:
+      alias: uut
+      type: router
+      os: nxos
+      platform: n9kv
+      connections:
+        ssh:
+            command: mock_device_cli --os nxos --mock_data_dir mocked_data/nxos --state connect
+            protocol: unknown     
+    csr1000v-1:
+      alias: helper
+      type: router
+      os: iosxe
+      platform: asr1k
+      connections:
+        ssh:
+            command: mock_device_cli --os iosxe --mock_data_dir mocked_data/iosxe --state connect
+            protocol: unknown     

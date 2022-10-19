@@ -1,0 +1,314 @@
++++ nx-osv-1 with via 'ssh': executing command 'show bgp process vrf all' +++
+show bgp process vrf all
+
+BGP Process Information
+BGP Process ID                 : 8613
+BGP Protocol Started, reason:  : configuration
+BGP Protocol Tag               : 65000
+BGP Protocol State             : Running
+BGP MMODE                      : Not Initialized
+BGP Memory State               : OK
+BGP asformat                   : asplain
+
+BGP attributes information
+Number of attribute entries    : 2
+HWM of attribute entries       : 2
+Bytes used by entries          : 200
+Entries pending delete         : 0
+HWM of entries pending delete  : 0
+BGP paths per attribute HWM    : 1
+BGP AS path entries            : 0
+Bytes used by AS path entries  : 0
+
+Information regarding configured VRFs:
+
+BGP Information for VRF default
+VRF Id                         : 1
+VRF state                      : UP
+Router-ID                      : 10.2.2.2
+Configured Router-ID           : 10.2.2.2
+Confed-ID                      : 0
+Cluster-ID                     : 0.0.0.0
+No. of configured peers        : 1
+No. of pending config peers    : 0
+No. of established peers       : 1
+VRF RD                         : Not configured
+
+    Information for address family IPv4 Unicast in VRF default
+    Table Id                   : 1
+    Table state                : UP
+    Peers      Active-peers    Routes     Paths      Networks   Aggregates
+    1          1               2          2          1          0         
+
+    Redistribution                
+        None
+
+    Wait for IGP convergence is not configured
+
+
+    Nexthop trigger-delay
+        critical 3000 ms
+        non-critical 10000 ms
+
+    Information for address family IPv6 Unicast in VRF default
+    Table Id                   : 80000001
+    Table state                : UP
+    Peers      Active-peers    Routes     Paths      Networks   Aggregates
+    0          0               0          0          0          0         
+
+    Redistribution                
+        None
+
+    Wait for IGP convergence is not configured
+
+
+    Nexthop trigger-delay
+        critical 3000 ms
+        non-critical 10000 ms
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show running-config | inc peer-session' +++
+show running-config | inc peer-session
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show running-config | inc peer-policy' +++
+show running-config | inc peer-policy
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show bgp vrf all all dampening parameters' +++
+show bgp vrf all all dampening parameters
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show bgp vrf all all nexthop-database' +++
+show bgp vrf all all nexthop-database
+
+Next Hop table for VRF default, address family IPv4 Unicast:
+Next-hop trigger-delay(miliseconds)
+  Critical: 3000 Non-critical: 10000
+IPv4 Next-hop table
+
+Nexthop: 0.0.0.0, Flags: 0x2, Refcount: 1, IGP cost: 0
+IGP Route type: 0, IGP preference: 0
+Nexthop is not-attached local unreachable not-labeled
+Nexthop last resolved: never, using 0.0.0.0/0
+Metric next advertise: Never
+RNH epoch: 0
+
+Nexthop: 10.1.1.1, Flags: 0x1, Refcount: 1, IGP cost: 41
+IGP Route type: 0, IGP preference: 110
+Attached nexthop: 10.0.2.1, Interface: Ethernet2/2
+Attached nexthop: 10.0.1.1, Interface: Ethernet2/1
+Nexthop is not-attached not-local reachable not-labeled
+Nexthop last resolved: 00:01:31, using 10.1.1.1/32
+Metric next advertise: Never
+RNH epoch: 3
+IPv6 Next-hop table
+
+Next Hop table for VRF default, address family IPv6 Unicast:
+Next-hop trigger-delay(miliseconds)
+  Critical: 3000 Non-critical: 10000
+IPv4 Next-hop table
+IPv6 Next-hop table
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show routing vrf all' +++
+show routing vrf all
+IP Route Table for VRF "default"
+'*' denotes best ucast next-hop
+'**' denotes best mcast next-hop
+'[x/y]' denotes [preference/metric]
+'%<string>' in via output denotes VRF <string>
+
+10.0.1.0/24, ubest/mbest: 1/0, attached
+    *via 10.0.1.2, Eth2/1, [0/0], 00:01:41, direct
+10.0.1.2/32, ubest/mbest: 1/0, attached
+    *via 10.0.1.2, Eth2/1, [0/0], 00:01:41, local
+10.0.2.0/24, ubest/mbest: 1/0, attached
+    *via 10.0.2.2, Eth2/2, [0/0], 6d01h, direct
+10.0.2.2/32, ubest/mbest: 1/0, attached
+    *via 10.0.2.2, Eth2/2, [0/0], 6d01h, local
+10.1.1.1/32, ubest/mbest: 2/0
+    *via 10.0.1.1, Eth2/1, [110/41], 00:01:32, ospf-1, intra
+    *via 10.0.2.1, Eth2/2, [110/41], 00:01:32, ospf-1, intra
+10.2.2.2/32, ubest/mbest: 2/0, attached
+    *via 10.2.2.2, Lo0, [0/0], 6d01h, local
+    *via 10.2.2.2, Lo0, [0/0], 6d01h, direct
+10.11.11.11/32, ubest/mbest: 1/0
+    *via 10.1.1.1, [200/0], 00:01:32, bgp-65000, internal, tag 65000, 
+10.22.22.22/32, ubest/mbest: 2/0, attached
+    *via 10.22.22.22, Lo1, [0/0], 6d01h, local
+    *via 10.22.22.22, Lo1, [0/0], 6d01h, direct
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show bgp vrf all all' +++
+show bgp vrf all all
+BGP routing table information for VRF default, address family IPv4 Unicast
+BGP table version is 7, local router ID is 10.2.2.2
+Status: s-suppressed, x-deleted, S-stale, d-dampened, h-history, *-valid, >-best
+Path type: i-internal, e-external, c-confed, l-local, a-aggregate, r-redist, I-injected
+Origin codes: i - IGP, e - EGP, ? - incomplete, | - multipath, & - backup
+
+   Network            Next Hop            Metric     LocPrf     Weight Path
+*>i10.11.11.11/32     10.1.1.1                 0        100          0 i
+*>l10.22.22.22/32     0.0.0.0                           100      32768 i
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show vrf all' +++
+show vrf all
+% Invalid command 'show vrf all'
+Valid commands:
+ config term
+ dir
+ sh run | egrep '^vrf|register-policy'
+ show bgp ipv4 mvpn route-type 1 vrf all
+ show bgp ipv4 mvpn route-type 2 vrf all
+ show bgp ipv4 mvpn route-type 3 vrf all
+ show bgp ipv4 mvpn route-type 4 vrf all
+ show bgp ipv4 mvpn route-type 5 vrf all
+ show bgp ipv4 mvpn route-type 6 vrf all
+ show bgp ipv4 mvpn route-type 7 vrf all
+ show bgp ipv4 mvpn sa-ad detail vrf all
+ show bgp l2vpn evpn neighbors
+ show bgp l2vpn evpn route-type 1
+ show bgp l2vpn evpn route-type 2
+ show bgp l2vpn evpn route-type 3
+ show bgp l2vpn evpn route-type 4
+ show bgp l2vpn evpn summary
+ show bgp process vrf all
+ show bgp vrf all all
+ show bgp vrf all all dampening parameters
+ show bgp vrf all all nexthop-database
+ show bgp vrf all all summary
+ show bgp vrf default all neighbors
+ show bgp vrf default all neighbors 10.1.1.1 advertised-routes
+ show bgp vrf default all neighbors 10.1.1.1 received-routes
+ show bgp vrf default all neighbors 10.1.1.1 routes
+ show bgp vrf management all neighbors
+ show boot
+ show fabric multicast globals
+ show fabric multicast ipv4 l2-mroute vni all
+ show fabric multicast ipv4 sa-ad-route vrf all
+ show feature
+ show forwarding distribution multicast route vrf all
+ show hsrp all
+ show install active
+ show interface
+ show interface switchport
+ show inventory
+ show ip arp detail
+ show ip arp statistics
+ show ip arp summary
+ show ip igmp groups vrf all
+ show ip igmp interface vrf all
+ show ip igmp local-groups vrf all
+ show ip igmp snooping
+ show ip interface vrf all
+ show ip mroute vrf all
+ show ip msdp peer vrf all
+ show ip msdp sa-cache detail vrf all
+ show ip ospf database external detail vrf all
+ show ip ospf database network detail vrf all
+ show ip ospf database opaque-area detail vrf all
+ show ip ospf database router detail vrf all
+ show ip ospf database summary detail vrf all
+ show ip ospf interface vrf all
+ show ip ospf mpls ldp interface vrf all
+ show ip ospf neighbors detail vrf all
+ show ip ospf sham-links vrf all
+ show ip ospf virtual-links vrf all
+ show ip ospf vrf all
+ show ip pim df vrf all
+ show ip pim group-range vrf all
+ show ip pim interface vrf all
+ show ip pim neighbor vrf all
+ show ip pim policy statistics register-policy vrf all
+ show ip pim route vrf all
+ show ip pim rp vrf all
+ show ip pim vrf all detail
+ show ip prefix-list
+ show ip route vrf all
+ show ip static-route
+ show ip static-route multicast vrf all
+ show ipv6 icmp neighbor detail vrf all
+ show ipv6 interface vrf all
+ show ipv6 mld groups vrf all
+ show ipv6 mld interface vrf all
+ show ipv6 mld local-groups vrf all
+ show ipv6 mroute vrf all
+ show ipv6 nd interface vrf all
+ show ipv6 neighbor detail vrf all
+ show ipv6 pim df vrf all
+ show ipv6 pim group-range vrf all
+ show ipv6 pim interface vrf all
+ show ipv6 pim neighbor vrf all
+ show ipv6 pim route vrf all
+ show ipv6 pim rp vrf all
+ show ipv6 prefix-list
+ show ipv6 route vrf all
+ show ipv6 routers vrf all
+ show ipv6 static-route
+ show ipv6 static-route multicast vrf all
+ show l2route evpn ethernet-segment all
+ show l2route fl all
+ show l2route mac all detail
+ show l2route mac-ip all detail
+ show l2route summary
+ show l2route topology detail
+ show module
+ show ntp peer-status
+ show ntp peers
+ show nve ethernet-segment
+ show nve multisite dci-links
+ show nve multisite fabric-links
+ show nve peers
+ show nve vni
+ show nve vni ingress-replication
+ show nve vni summary
+ show redundancy status
+ show route-map
+ show routing ipv6 vrf all
+ show routing vrf all
+ show running-config
+ show running-config nv overlay
+ show running-config | inc peer-policy
+ show running-config | inc peer-session
+ show vdc detail
+ show vdc membership status
+ show version
+ show vlan
+ show vlan id 1-3967 vn-segment
+ show vrf
+ show vrf all detail
+ show vrf all interface
+ term length 0
+ term width 511
+ terminal session-timeout 0
+switch#
++++ nx-osv-1 with via 'ssh': executing command 'show bgp vrf all all summary' +++
+show bgp vrf all all summary
+BGP summary information for VRF default, address family IPv4 Unicast
+BGP router identifier 10.2.2.2, local AS number 65000
+BGP table version is 7, IPv4 Unicast config peers 1, capable peers 1
+2 network entries and 2 paths using 288 bytes of memory
+BGP attribute entries [2/288], BGP AS path entries [0/0]
+BGP community entries [0/0], BGP clusterlist entries [0/0]
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.1.1        4 65000    9588    8711        7    0    0    6d01h 1         
+
+BGP summary information for VRF default, address family IPv6 Unicast
+switch#
++====================================================================================================================================================+
+| Commands for learning feature 'Bgp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpProcessVrfAll'>, arguments: {'vrf':'all'}                                                    |
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpVrfAllAllNextHopDatabase'>, arguments: {'address_family':'all','vrf':'all'}                  |
+|   cmd: <class 'genie.libs.parser.nxos.show_routing.ShowRoutingVrfAll'>, arguments: {'vrf':'all'}                                                   |
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpVrfAllAll'>, arguments: {'address_family':'all','vrf':'all'}                                 |
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpVrfAllAllSummary'>, arguments: {'address_family':'all','vrf':'all'}                          |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.nxos.show_vrf.ShowVrf'>, arguments: {'vrf':'all'}                                                                 |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpPeerSession'>                                                                                |
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpPeerPolicy'>                                                                                 |
+|   cmd: <class 'genie.libs.parser.nxos.show_bgp.ShowBgpVrfAllAllDampeningParameters'>, arguments: {'address_family':'all','vrf':'all'}              |
+|====================================================================================================================================================|

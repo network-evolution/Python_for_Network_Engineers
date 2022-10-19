@@ -1,0 +1,520 @@
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all summary' +++
+show bgp all summary
+For address family: IPv4 Unicast
+BGP router identifier 10.1.1.1, local AS number 65000
+BGP table version is 3, main routing table version 3
+2 network entries using 496 bytes of memory
+2 path entries using 272 bytes of memory
+2/2 BGP path/bestpath attribute entries using 560 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 1328 total bytes of memory
+BGP activity 3/1 prefixes, 3/1 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.2.2.2        4        65000    8711    9588        3    0    0 6d01h           1
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show ip bgp template peer-session' +++
+show ip bgp template peer-session
+% Invalid command 'show ip bgp template peer-session'
+Valid commands:
+ config term
+ dir
+ show access-lists
+ show arp
+ show bgp all
+ show bgp all cluster-ids
+ show bgp all detail
+ show bgp all neighbors
+ show bgp all neighbors 10.2.2.2 advertised-routes
+ show bgp all neighbors 10.2.2.2 policy
+ show bgp all neighbors 10.2.2.2 received-routes
+ show bgp all neighbors 10.2.2.2 routes
+ show bgp all neighbors | i BGP neighbor
+ show bgp all summary
+ show errdisable recovery
+ show etherchannel summary
+ show interfaces
+ show interfaces accounting
+ show inventory
+ show ip arp summary
+ show ip bgp all dampening parameters
+ show ip bgp template peer-policy 
+ show ip bgp template peer-session 
+ show ip igmp groups detail
+ show ip igmp interface
+ show ip interface
+ show ip mroute
+ show ip mroute static
+ show ip multicast
+ show ip ospf
+ show ip ospf database external
+ show ip ospf database network
+ show ip ospf database opaque-area
+ show ip ospf database router
+ show ip ospf database summary
+ show ip ospf interface
+ show ip ospf interface | section GigabitEthernet2
+ show ip ospf interface | section GigabitEthernet3
+ show ip ospf mpls ldp interface
+ show ip ospf mpls traffic-eng link
+ show ip ospf neighbor detail
+ show ip ospf sham-links
+ show ip ospf virtual-links
+ show ip pim bsr-router
+ show ip pim interface
+ show ip pim interface detail
+ show ip pim interface df
+ show ip pim neighbor
+ show ip pim rp mapping
+ show ip prefix-list detail
+ show ip protocols
+ show ip route
+ show ip static route
+ show ip traffic
+ show ipv6 interface
+ show ipv6 mroute
+ show ipv6 pim bsr candidate-rp
+ show ipv6 pim bsr election
+ show ipv6 pim interface
+ show ipv6 pim neighbor
+ show ipv6 prefix-list detail
+ show ipv6 route updated
+ show ipv6 static detail
+ show issu rollback-timer
+ show issu state detail
+ show lacp counters
+ show lacp neighbor
+ show lacp sys-id
+ show lisp all service ethernet
+ show lisp all service ethernet summary
+ show lisp all service ipv4
+ show lisp all service ipv4 summary
+ show lisp all service ipv6
+ show lisp all service ipv6 summary
+ show lldp
+ show lldp interface
+ show lldp neighbors detail
+ show lldp traffic
+ show mac address-table
+ show mac address-table aging-time
+ show mac address-table learning
+ show ntp associations
+ show ntp config
+ show ntp status
+ show pagp  counters
+ show pagp internal
+ show pagp neighbor
+ show platform
+ show redundancy
+ show route-map all
+ show running-config
+ show running-config | section router ospf 1
+ show spanning-tree
+ show spanning-tree detail
+ show spanning-tree mst configuration
+ show spanning-tree mst detail
+ show spanning-tree summary
+ show standby all
+ show standby delay
+ show version
+ show vlan
+ show vrf detail
+ show vrf detail | inc \(VRF
+ term length 0
+ term width 0
+ terminal session-timeout 0
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show ip bgp template peer-policy' +++
+show ip bgp template peer-policy
+% Invalid command 'show ip bgp template peer-policy'
+Valid commands:
+ config term
+ dir
+ show access-lists
+ show arp
+ show bgp all
+ show bgp all cluster-ids
+ show bgp all detail
+ show bgp all neighbors
+ show bgp all neighbors 10.2.2.2 advertised-routes
+ show bgp all neighbors 10.2.2.2 policy
+ show bgp all neighbors 10.2.2.2 received-routes
+ show bgp all neighbors 10.2.2.2 routes
+ show bgp all neighbors | i BGP neighbor
+ show bgp all summary
+ show errdisable recovery
+ show etherchannel summary
+ show interfaces
+ show interfaces accounting
+ show inventory
+ show ip arp summary
+ show ip bgp all dampening parameters
+ show ip bgp template peer-policy 
+ show ip bgp template peer-session 
+ show ip igmp groups detail
+ show ip igmp interface
+ show ip interface
+ show ip mroute
+ show ip mroute static
+ show ip multicast
+ show ip ospf
+ show ip ospf database external
+ show ip ospf database network
+ show ip ospf database opaque-area
+ show ip ospf database router
+ show ip ospf database summary
+ show ip ospf interface
+ show ip ospf interface | section GigabitEthernet2
+ show ip ospf interface | section GigabitEthernet3
+ show ip ospf mpls ldp interface
+ show ip ospf mpls traffic-eng link
+ show ip ospf neighbor detail
+ show ip ospf sham-links
+ show ip ospf virtual-links
+ show ip pim bsr-router
+ show ip pim interface
+ show ip pim interface detail
+ show ip pim interface df
+ show ip pim neighbor
+ show ip pim rp mapping
+ show ip prefix-list detail
+ show ip protocols
+ show ip route
+ show ip static route
+ show ip traffic
+ show ipv6 interface
+ show ipv6 mroute
+ show ipv6 pim bsr candidate-rp
+ show ipv6 pim bsr election
+ show ipv6 pim interface
+ show ipv6 pim neighbor
+ show ipv6 prefix-list detail
+ show ipv6 route updated
+ show ipv6 static detail
+ show issu rollback-timer
+ show issu state detail
+ show lacp counters
+ show lacp neighbor
+ show lacp sys-id
+ show lisp all service ethernet
+ show lisp all service ethernet summary
+ show lisp all service ipv4
+ show lisp all service ipv4 summary
+ show lisp all service ipv6
+ show lisp all service ipv6 summary
+ show lldp
+ show lldp interface
+ show lldp neighbors detail
+ show lldp traffic
+ show mac address-table
+ show mac address-table aging-time
+ show mac address-table learning
+ show ntp associations
+ show ntp config
+ show ntp status
+ show pagp  counters
+ show pagp internal
+ show pagp neighbor
+ show platform
+ show redundancy
+ show route-map all
+ show running-config
+ show running-config | section router ospf 1
+ show spanning-tree
+ show spanning-tree detail
+ show spanning-tree mst configuration
+ show spanning-tree mst detail
+ show spanning-tree summary
+ show standby all
+ show standby delay
+ show version
+ show vlan
+ show vrf detail
+ show vrf detail | inc \(VRF
+ term length 0
+ term width 0
+ terminal session-timeout 0
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show vrf detail | inc \(VRF' +++
+show vrf detail | inc \(VRF
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all cluster-ids' +++
+show bgp all cluster-ids
+Global cluster-id: 10.1.1.1 (configured: 0.0.0.0)
+BGP client-to-client reflection:         Configured    Used
+  all (inter-cluster and intra-cluster): ENABLED
+  intra-cluster:                         ENABLED       ENABLED
+
+List of cluster-ids:
+Cluster-id     #-neighbors C2C-rfl-CFG C2C-rfl-USE
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show ip bgp all dampening parameters' +++
+show ip bgp all dampening parameters
+For address family: IPv4 Unicast
+
+% dampening not enabled for base
+
+For address family: IPv6 Unicast
+
+% dampening not enabled for base
+
+For address family: IPv4 Multicast
+
+% dampening not enabled for base
+
+For address family: L2VPN E-VPN
+
+% dampening not enabled for base
+
+For address family: MVPNv4 Unicast
+
+% dampening not enabled for base
+
+For address family: MVPNv6 Unicast
+
+% dampening not enabled for base
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors' +++
+show bgp all neighbors
+For address family: IPv4 Unicast
+BGP neighbor is 10.2.2.2,  remote AS 65000, internal link
+  BGP version 4, remote router ID 10.2.2.2
+  BGP state = Established, up for 6d01h
+  Last read 00:00:26, last write 00:00:17, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+    Graceful Restart Capability: received
+      Remote Restart timer is 120 seconds
+      Address families advertised by peer:
+        IPv4 Unicast (was not preserved
+    Enhanced Refresh Capability: advertised
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:                2          2
+    Keepalives:          9585       8708
+    Route Refresh:          0          0
+    Total:               9588       8711
+  Do log neighbor state changes (via global configuration)
+  Default minimum time between advertisement runs is 0 seconds
+
+  Address tracking is enabled, the RIB does have a route to 10.2.2.2
+  Route to peer address reachability Up: 3; Down: 0
+    Last notification 6d01h
+  Connections established 1; dropped 0
+  Last reset never
+  Interface associated: (none) (peering address NOT in same link)
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+  SSO is disabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 10.1.1.1, Local port: 24407
+Foreign host: 10.2.2.2, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x1F27679C):
+Timer          Starts    Wakeups            Next
+Retrans          9586          0             0x0
+TimeWait            0          0             0x0
+AckHold          8710       8381             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger            1          1             0x0
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss: 1875399253  snduna: 1875581505  sndnxt: 1875581505
+irs:  378457686  rcvnxt:  378623281
+
+sndwnd:  16616  scale:      0  maxrcvwnd:  16384
+rcvwnd:  16080  scale:      0  delrcvwnd:    304
+
+SRTT: 1000 ms, RTTO: 1003 ms, RTV: 3 ms, KRTT: 0 ms
+minRTT: 8 ms, maxRTT: 1000 ms, ACK hold: 200 ms
+uptime: 522489923 ms, Sent idletime: 17617 ms, Receive idletime: 17505 ms 
+Status Flags: active open
+Option Flags: nagle, path mtu capable
+IP Precedence value : 6
+
+Datagrams (max data segment is 536 bytes):
+Rcvd: 18280 (out of order: 0), with data: 8709, total data bytes: 165594
+Sent: 18270 (retransmit: 0, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 9587, total data bytes: 182251
+
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+TCP Semaphore      0x7F15C3ABF418  FREE 
+
+
+For address family: IPv6 Unicast
+
+For address family: IPv4 Multicast
+
+For address family: L2VPN E-VPN
+
+For address family: MVPNv4 Unicast
+
+For address family: MVPNv6 Unicast
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors 10.2.2.2 policy' +++
+show bgp all neighbors 10.2.2.2 policy
+ Neighbor: 10.2.2.2, Address-Family: IPv4 Unicast
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all' +++
+show bgp all
+For address family: IPv4 Unicast
+
+BGP table version is 3, local router ID is 10.1.1.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, L long-lived-stale,
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.11.11.11/32   0.0.0.0                  0         32768 i
+ *>i  10.22.22.22/32   10.2.2.2                      100      0 i
+
+For address family: IPv6 Unicast
+
+
+For address family: IPv4 Multicast
+
+
+For address family: L2VPN E-VPN
+
+
+For address family: MVPNv4 Unicast
+
+
+For address family: MVPNv6 Unicast
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all detail' +++
+show bgp all detail
+For address family: IPv4 Unicast
+
+BGP routing table entry for 10.11.11.11/32, version 2
+  Paths: (1 available, best #1, table default)
+  Advertised to update-groups:
+     1         
+  Refresh Epoch 1
+  Local
+    0.0.0.0 from 0.0.0.0 (10.1.1.1)
+      Origin IGP, metric 0, localpref 100, weight 32768, valid, sourced, local, best
+      rx pathid: 0, tx pathid: 0x0
+BGP routing table entry for 10.22.22.22/32, version 3
+  Paths: (1 available, best #1, table default)
+  Not advertised to any peer
+  Refresh Epoch 1
+  Local
+    10.2.2.2 (metric 2) from 10.2.2.2 (10.2.2.2)
+      Origin IGP, localpref 100, valid, internal, best
+      rx pathid: 0, tx pathid: 0x0
+
+For address family: IPv6 Unicast
+
+
+For address family: IPv4 Multicast
+
+
+For address family: L2VPN E-VPN
+
+
+For address family: MVPNv4 Unicast
+
+
+For address family: MVPNv6 Unicast
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors 10.2.2.2 advertised-routes' +++
+show bgp all neighbors 10.2.2.2 advertised-routes
+For address family: IPv4 Unicast
+BGP table version is 3, local router ID is 10.1.1.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, L long-lived-stale,
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>   10.11.11.11/32   0.0.0.0                  0         32768 i
+
+Total number of prefixes 1
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.2.2.2,  remote AS 65000, internal link
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors 10.2.2.2 routes' +++
+show bgp all neighbors 10.2.2.2 routes
+For address family: IPv4 Unicast
+BGP table version is 3, local router ID is 10.1.1.1
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+              t secondary path, L long-lived-stale,
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>i  10.22.22.22/32   10.2.2.2                      100      0 i
+
+Total number of prefixes 1
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.2.2.2,  remote AS 65000, internal link
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors 10.2.2.2 received-routes' +++
+show bgp all neighbors 10.2.2.2 received-routes
+For address family: IPv4 Unicast
+% Inbound soft reconfiguration not enabled on 10.2.2.2
+switch#
++++ csr1000v-1 with via 'ssh': executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.2.2.2,  remote AS 65000, internal link
+switch#
+Could not learn <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>
+Show Command: show bgp all neighbors 10.2.2.2 received-routes
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Bgp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllSummary'>, arguments: {'address_family':'','vrf':''}                                     |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllClusterIds'>                                                                             |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighbors'>, arguments: {'address_family':'','neighbor':''}                              |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAll'>, arguments: {'address_family':''}                                                     |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllDetail'>, arguments: {'address_family':'','vrf':''}                                      |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighborsAdvertisedRoutes'>, arguments: {'address_family':'','neighbor':'10.2.2.2'}      |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighborsRoutes'>, arguments: {'address_family':'','neighbor':'10.2.2.2'}                |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowIpBgpTemplatePeerSession'>                                                                     |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowIpBgpTemplatePeerPolicy'>                                                                      |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowIpBgpAllDampeningParameters'>                                                                  |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighborsPolicy'>, arguments: {'neighbor':'10.2.2.2'}                                    |
+|   cmd: <class 'genie.libs.parser.iosxe.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>, arguments: {'address_family':'','neighbor':'10.2.2.2'}        |
+|====================================================================================================================================================|
