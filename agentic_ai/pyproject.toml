@@ -1,0 +1,13 @@
+[project]
+name = "agentic-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=1.56.0",
+    "netmiko>=4.6.0",
+    "openai-agents>=0.6.3",
+    "streamlit>=1.52.2",
+    "tiktoken>=0.12.0",
+]

@@ -1,0 +1,14 @@
+{
+    "US-NYC-Core-R1": {
+        "host": "192.168.1.50",
+        "username": "admin",
+        "password": "cisco123!",
+        "device_type": "cisco_ios"
+    },
+    "D1": {
+        "host": "**********",
+        "username": "networkevolution.in",
+        "password": "**********",
+        "device_type": "cisco_ios"
+    }
+}
